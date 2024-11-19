@@ -1,0 +1,22 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  background-color: rgb(252, 252, 241);
+  min-height: 100vh;
+}
+
+svg{
+  fill: #636363;
+}
+
+svg:hover {
+  fill: #000;
+  cursor: pointer;
+}
