@@ -12,7 +12,7 @@
 
 
     <div>
-      <SearchIcon />
+      <SearchInput />
       <a href="">Stores</a>
       <UserIcon />
       <FavoriteIcon />
@@ -22,10 +22,10 @@
 </template>
 
 <script setup>
-import SearchIcon from '@/assets/icons/SearchIcon.vue';
 import UserIcon from '@/assets/icons/UserIcon.vue';
 import FavoriteIcon from '@/assets/icons/FavoriteIcon.vue';
 import CartIcon from '@/assets/icons/CartIcon.vue';
+import SearchInput from './SearchInput.vue';
 
 </script>
 
