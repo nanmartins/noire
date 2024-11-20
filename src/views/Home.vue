@@ -14,13 +14,53 @@
       <h3>Our range is crafted Sustainably with longevity in mind.</h3>
     </div>
 
-    <CardsGrid />
+
+    <!-- First Grid -->
+    <div class="cards-container">
+      <v-row no-gutters>
+        <v-col
+          v-for="firstCard in firstCards"
+          :key="firstCard.title"
+          cols="12"
+          sm="4"
+          class="pa-3"
+        >
+          <CardsGrid
+            :src="firstCard.src"
+            :title="firstCard.title"
+            height="530px"
+          ></CardsGrid>
+        </v-col>
+
+      </v-row>
+    </div>
 
     <div class="home-text-divider">
       <h3>What to Wear Now</h3>
     </div>
 
+
     <ProductsGrid />
+
+    <!-- Second Grid -->
+
+    <div class="cards-container">
+      <v-row no-gutters>
+        <v-col
+          v-for="secondCard in secondCards"
+          :key="secondCard.title"
+          cols="6"
+          class="pa-3"
+        >
+          <CardsGrid
+            :src="secondCard.src"
+            :title="secondCard.title"
+            height="730px"
+          ></CardsGrid>
+        </v-col>
+
+      </v-row>
+    </div>
 
   </main>
 </template>
@@ -30,9 +70,50 @@ import HomeBanner from '@/assets/images/home-banner.jpg';
 import CardsGrid from '@/components/CardsGrid.vue';
 import ProductsGrid from '@/components/ProductsGrid.vue';
 
+import NewArrivals from '@/assets/images/new-arrivals.jpg';
+import CasualEdit from '@/assets/images/casual-edit.jpg';
+import BestSellers from '@/assets/images/best-sellers.jpg';
+import SmartChic from '@/assets/images/smart-chic.jpg';
+import Ready2Go from '@/assets/images/ready-to-go.jpg';
+
+
+const firstCards = [
+  {
+    title: 'New Arrivals',
+    src: NewArrivals,
+  },
+  {
+    title: 'The Casual Edit',
+    src: CasualEdit,
+  },
+  {
+    title: 'Best-Sellers',
+    src: BestSellers,
+  },
+];
+
+const secondCards = [
+  {
+    title: 'The Smart Chic',
+    src: SmartChic
+  },
+  {
+    title: 'Ready to Go',
+    src: Ready2Go
+  }
+]
+
 </script>
 
 <style scoped>
+
+  .cards-container {
+    margin: auto 28px 10px 28px;
+    text-align: start;
+    flex-wrap: wrap;
+  }
+
+
 
   .banner-container {
     position: relative;
@@ -70,9 +151,9 @@ import ProductsGrid from '@/components/ProductsGrid.vue';
     background-color: rgba(252, 252, 241, 0.832);
     color: #636363;
     border: none;
-    border-radius:1px;
+    border-radius: 1px;
     cursor: pointer;
-    box-shadow: 0 2px 2px rgba(32, 32, 32, 0.2);
+    /* box-shadow: 0 2px 2px rgba(32, 32, 32, 0.2); */
   }
 
   button:hover {

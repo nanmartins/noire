@@ -2,7 +2,7 @@
   <main>
 
     <v-row
-      class="products-container pb-12"
+      class="products-container mb-10 pb-10"
       no-gutters
     >
       <v-col
