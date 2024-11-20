@@ -3,7 +3,7 @@
     cycle
     hide-delimiters
     interval="10000"
-    height="40px"
+    height="45px"
   >
     <v-carousel-item
       v-for="(message, i) in messages"
@@ -27,7 +27,6 @@
 <script setup>
 import { ref } from 'vue';
 
-// Array of messages
 const messages = ref([
   "The Archive Sale is live. Starting at 20% off. Shop now.",
   "New arrivals are here. Shop the latest styles now.",
@@ -39,17 +38,6 @@ const messages = ref([
 
 
 <style scoped>
-
-/* .carousel {
-  position: relative;
-  width: 100vw;
-  height: 40px;
-  overflow: hidden;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-} */
 
 .message {
   font-family: "Raleway", sans-serif;

@@ -34,7 +34,7 @@ import SearchInput from './SearchInput.vue';
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 25px;
+  padding: 25px 30px;
 }
 
 header > div {
