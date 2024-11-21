@@ -1,24 +1,18 @@
 <template>
   <main>
 
-    <!-- <v-col
-      cols="12"
-      sm="4"
-      class="pa-3"
-    > -->
-      <v-sheet class="ma-0 pa-0 card-body">
-        <v-img
-          :src="src"
-          :height="height"
-          cover
-          class="card-image"
-        >
-          <div class="card-content">
-            <v-card-title class="card-title">{{ title }}</v-card-title>
-          </div>
-        </v-img>
-      </v-sheet>
-    <!-- </v-col> -->
+    <v-sheet class="ma-0 pa-0 card-body">
+      <v-img
+        :src="src"
+        :height="height"
+        cover
+        class="card-image"
+      >
+        <div class="card-content">
+          <v-card-title class="card-title">{{ title }}</v-card-title>
+        </div>
+      </v-img>
+    </v-sheet>
 
   </main>
 </template>

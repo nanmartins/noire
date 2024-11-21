@@ -62,6 +62,16 @@
       </v-row>
     </div>
 
+
+    <div class="home-text-banner">
+      <div class="banner-text-banner-content">
+        <h2>The Art of Fewer, Better Choices</h2>
+        <p>Opting for quality over quantity means selecting timeless, durable, and responsibly made items. This approach simplifies our lives and fosters a deeper appreciation for our surroundings. Emphasizing longevity and responsible production resonates with a more sustainable and mindful lifestyle.</p>
+      </div>
+    </div>
+
+    <InstagramGrid />
+
   </main>
 </template>
 
@@ -69,6 +79,7 @@
 import HomeBanner from '@/assets/images/home-banner.jpg';
 import CardsGrid from '@/components/CardsGrid.vue';
 import ProductsGrid from '@/components/ProductsGrid.vue';
+import InstagramGrid from '@/components/InstagramGrid.vue';
 
 import NewArrivals from '@/assets/images/new-arrivals.jpg';
 import CasualEdit from '@/assets/images/casual-edit.jpg';
@@ -110,7 +121,7 @@ const secondCards = [
   .cards-container {
     margin: auto 28px 10px 28px;
     text-align: start;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
 
@@ -172,6 +183,36 @@ const secondCards = [
     letter-spacing: 1.2px;
     color: #636363;
     margin-left: 40px;
+  }
+
+  .home-text-banner {
+    background: rgb(240, 238, 223);
+    margin: 30px auto;
+  }
+
+  .banner-text-banner-content {
+    display: grid;
+    gap: 40px;
+    place-content: center;
+    text-align: center;
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    height: 450px;
+    font-family: "Montserrat", sans-serif;
+    color: #636363;
+  }
+
+  .banner-text-banner-content h2 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+
+  .banner-text-banner-content p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
 
 </style>
