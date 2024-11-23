@@ -2,6 +2,7 @@
 // import { RouterLink, RouterView } from 'vue-router'
 import Header from '@/components/Header.vue'
 import AnnounceBanner from './components/AnnounceBanner.vue';
+import Footer from './components/Footer.vue';
 
 </script>
 
@@ -10,6 +11,7 @@ import AnnounceBanner from './components/AnnounceBanner.vue';
     <AnnounceBanner />
     <Header />
     <RouterView />
+    <Footer />
   </main>
 </template>
 

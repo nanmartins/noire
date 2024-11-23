@@ -4,7 +4,7 @@
 
 
     <v-row
-      class="instagram-grid mb-10 pb-10"
+      class="instagram-grid pb-10"
       no-gutters
     >
       <v-col
