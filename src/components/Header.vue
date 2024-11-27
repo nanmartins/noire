@@ -2,6 +2,7 @@
   <header>
     <div class="logo-nav">
       <img src="../assets/images/noire-logo.png" alt="">
+
       <nav>
         <a href="">Shop</a>
         <a href="">New Arrivals</a>
@@ -30,41 +31,45 @@ import SearchInput from './SearchInput.vue';
 
 <style scoped>
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 30px;
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px;
+  }
 
-header > div {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+  header > div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
 
-.logo-nav {
-  gap: 40px;
-}
+  .logo-nav {
+    gap: 40px;
+  }
 
-nav {
-  display: flex;
-  gap: 30px;
-}
+  nav {
+    display: flex;
+    gap: 25px;
+  }
 
-a {
-  text-decoration: none;
-  color: #636363;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
+  a {
+    text-decoration: none;
+    color: #636363;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
 
-a:hover {
-  color: #000000;
-}
+  a:hover {
+    color: #000000;
+  }
 
-img {
-  width: 120px;
-}
+  img {
+    width: 120px;
+  }
 
+  @media screen and (max-width: 900px) {
+
+
+  }
 
 </style>

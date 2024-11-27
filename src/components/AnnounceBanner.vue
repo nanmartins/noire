@@ -45,4 +45,12 @@ const messages = ref([
   letter-spacing: 2px;
   color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+
+  .message {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
 </style>
