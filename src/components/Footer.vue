@@ -41,6 +41,8 @@
 
   </footer>
 
+  <p class="copyright">© NOIRE</p>
+
 </template>
 
 
@@ -127,6 +129,16 @@
     width: auto;
     max-width: 200px;
     align-self: start;
+  }
+
+  .copyright {
+    font-family: 'montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #515151;
+    padding: 30px;
+    background: rgb(240, 238, 223);
+    text-align: center;
   }
 
   @media screen and (max-width: 1200px) {
@@ -228,6 +240,7 @@
       margin-top: 15px;
       align-self: center;
     }
+
   }
 
   @media screen and (max-width: 500px) {
@@ -266,5 +279,6 @@
       max-width: 350px;
       /* width: 100%; */
     }
+
   }
 </style>
