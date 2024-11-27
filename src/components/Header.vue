@@ -6,7 +6,6 @@
         <a href="">Shop</a>
         <a href="">New Arrivals</a>
         <a href="">Sales</a>
-        <a href="">Journel</a>
       </nav>
     </div>
 
