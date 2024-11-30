@@ -39,18 +39,18 @@ const messages = ref([
 
 <style scoped>
 
-.message {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #fff;
-}
-
-@media screen and (max-width: 500px) {
-
   .message {
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #fff;
   }
-}
+
+  @media screen and (max-width: 500px) {
+
+    .message {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
 </style>
